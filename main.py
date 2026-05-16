@@ -19,11 +19,11 @@ def main():
 
         match choice:
             case "A":
-                pass
+                bank.check_balance()
             case "B":
-                pass
+                bank.withdraw()
             case "C":
-                pass
+                bank.deposit()
             case "D":
                 break
             case _:

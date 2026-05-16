@@ -16,6 +16,7 @@ def main():
         print("(C) Deposit Funds:")
         print("(D) Exit Program:")
         choice = input("Choose: ").upper()
+        clear_screen()
 
         match choice:
             case "A":
@@ -37,6 +38,4 @@ def clear_screen():
 
 if __name__ == "__main__":
     main()
-
-    clear_screen()
     print("\nHave a great day\n")

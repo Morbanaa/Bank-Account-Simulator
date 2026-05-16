@@ -6,7 +6,23 @@ class Bank():
         pass
 
     def withdraw(self):
-        pass
+        while True:
+            try:
+                amount = float(input("Enter amount to withdraw: "))
+
+                if amount <= 0:
+                    print("The value must be greater than zero!")
+                    continue
+                elif amount > self.balance:
+                    print("Insuficent Funds!")
+                    continue
+                else:
+                    self.balance -= amount
+
+                break
+            except ValueError:
+                print("Value Error! Must be a number!")
+        
 
     def check_balance(self):
         print(f"Balance: ${self.balance:.2f}")

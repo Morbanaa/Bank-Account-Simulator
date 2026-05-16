@@ -9,4 +9,5 @@ class Bank():
         pass
 
     def check_balance(self):
-        pass
+        print(f"Balance: ${self.balance:.2f}")
+        input("Hit enter to continue...")
